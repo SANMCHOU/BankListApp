@@ -1,0 +1,14 @@
+<li class="list-group-item list-group-item-action">
+    <div class="row">
+        <div class="column1">
+            <img [src]="icon" class="img-icon" alt="">
+            <p class="bank-name">{{banksObject.name}}</p>
+            <img src="../assets/Location icon.jpg" class="img-icon1" alt="">
+            <small>{{banksObject.address}}, {{banksObject.countryName}}</small>
+        </div>
+        <div class="column2">
+            <a [href]="bankslink" target="_blank">Go to site</a>
+            <app-rating-star [rating]='banksObject.rating'></app-rating-star>
+        </div>
+    </div>
+</li>

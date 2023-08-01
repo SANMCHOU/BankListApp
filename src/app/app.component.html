@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h3>World-wide Banks List<img src="../assets/Bank.png" class="img-icon" alt=""></h3>
+      <hr>
+      <input type="text" placeholder="Search here..." [(ngModel)]='StatusName'>
+      <span class="material-symbols-outlined">
+        search
+      </span>
+    </div>
+  </div>
+
+  <hr>
+  <div class="row">
+    <div class="col-md-10">
+      <ul class="list-group">
+        <app-bankdetails *ngFor="let bank of displayData  | filter : StatusName" [banksObject]="bank"></app-bankdetails>
+        <div class="btn-load" *ngIf="btnhide && !StatusName">
+          <button (click)="loadMore(skip,limit)" type="button">Load More</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

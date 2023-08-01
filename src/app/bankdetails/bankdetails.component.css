@@ -1,0 +1,66 @@
+
+.list-group-item:hover{
+    background-color:mediumaquamarine;
+    color: darkgreen;
+}
+
+.img-icon {
+    width: 70px;
+    float: left;
+    padding: 5px;
+}
+
+.img-icon1 {
+    width: 27px;
+    margin-top: -5px;
+    float: left;
+    padding: 5px;
+}
+
+.bank-name {
+    font-weight: 600;
+}
+
+a {
+    float: right;
+}
+
+a:link, a:visited {
+    background-color: greenyellow;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 30%;
+  }
+  
+  a:hover, a:active {
+    background-color: orange;
+  }
+
+  
+  /* Create two equal columns that floats next to each other */
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .column2 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  small {
+    display: flex;
+  }
