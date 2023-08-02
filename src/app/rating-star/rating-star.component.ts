@@ -9,10 +9,12 @@ export class RatingStarComponent implements OnInit {
   stars: Number[] = [1, 2, 3, 4, 5];
   selectedValue: any;
   @Input() rating: any;
+  rating1 : any;
 
   constructor() { }
 
   ngOnInit() {
-    this.selectedValue = this.rating;
+    this.rating1 = Math.round(this.rating);
+    this.selectedValue = this.rating1;
   }
 }
