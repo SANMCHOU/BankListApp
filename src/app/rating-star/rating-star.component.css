@@ -19,3 +19,10 @@
     float: right;
     display: flex;
   }
+
+  span {
+    display: flex;
+    justify-content: center;
+    font-size: smaller;
+  } 
+

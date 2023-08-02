@@ -11,7 +11,7 @@
   </div>
 
   <hr>
-  <div class="row">
+  <div class="row" *ngIf="displayData.length != 0">
     <div class="col-md-10">
       <ul class="list-group">
         <app-bankdetails *ngFor="let bank of displayData  | filter : StatusName" [banksObject]="bank"></app-bankdetails>
